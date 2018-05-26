@@ -1,0 +1,44 @@
+doctype html
+html
+	head
+		title Push Notification - FCM Demo
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		link(rel='shortcut icon' type='image/x-icon' href='/favicon.ico')
+		link(rel='stylesheet' type='text/css/' href='https://fonts.googleapis.com/css?family=Roboto')
+		link(rel='stylesheet' href='/stylesheets/w3.css')
+	body
+		.w3-content
+			.w3-display-container.w3-center(style='max-width:2000px;')
+					img(src='/favicon.ico')
+					p FCM Device Token
+					.w3-center
+						input.w3-border.w3-input#fcmtoken(type='text')
+					p Message Push
+					.w3-center
+						input.w3-border.w3-input#message(type='text')
+					p
+					button.w3-btn.w3-round#push Push
+					p#text
+		script(src='/javascripts/jquery.min.js')
+		script(src='/javascripts/api.js')
+		script.
+			var i = 0;
+			$('#push').on('click', function() {
+			//- 	setInterval(function() {
+			//- 		if(i <= 5) i++;
+			//- 		$('#text').text('Closing door after ' + i);
+			//- 		if(i == 5) {
+			//- 			$('#text').text('Door closed. Sending push notification');
+			//- 			i = 0;
+			//- 			clearInterval();
+			//- 		}
+			//- }, 1000);
+				var data = {
+					message: $('#message').val(),
+					fcmDeviceToken: $('#fcmtoken').val()
+				}
+				console.log(data)
+				api.post("/notify", data, function(status, result) {
+						if(status) console.log(JSON.stringify(result))
+				})
+			});
