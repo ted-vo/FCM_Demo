@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "184421532132",
+    "firebase_url": "https://demofcm-e6e73.firebaseio.com",
+    "project_id": "demofcm-e6e73",
+    "storage_bucket": "demofcm-e6e73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184421532132:android:8d8be21966139bcf",
+        "android_client_info": {
+          "package_name": "com.horical.demofcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184421532132-4s7fmkb5gnjgrp2skrsgc7n4i6rj5r8n.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "184421532132-4s7fmkb5gnjgrp2skrsgc7n4i6rj5r8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPbaE21-jjJxDlDGQpZrr9TTv355huCvo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DemoFCM</string>
+    <string name="default_notification_chanel_id">1</string>
+    <string name="default_notification_channel_name">FCM Demo</string>
+    <string name="msg_subscriber">Subscriber</string>
+    <string name="msg_subscribe_failed">Subscribe failed</string>
+    <string name="msg_token_fmt">Token: %s</string>
+</resources>

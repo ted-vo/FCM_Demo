@@ -23,7 +23,7 @@ const sendNotifications = (data, next) => {
 		uri: 'https://fcm.googleapis.com/fcm/send',
 		method: 'POST',
 		headers: {
-			'Authorization': 'key=AIzaSyDhUvJT9idvyX7YFkzgIOVYvFid6zBBEdA',
+			'Authorization': config.fcmLegacyKey,
 			'Content-Type': 'application/json'
 		},
 		json: data
